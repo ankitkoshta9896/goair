@@ -1,0 +1,36 @@
+<p style="color: green"><%= notice %></p>
+
+
+<h1>Schedule</h1>
+<br>
+<table class="table table-bordered">
+  <thead class="thead-dark">
+  <tr>
+    <th><%= link_to "Airline", :sort => "airline"%> </th>
+    <th><%= link_to "Departure", :sort => "departure"%> </th>
+    <th><%= link_to "Arrival", :sort => "arrival"%> </th>
+    <th><%= link_to "Duration", :sort => "duration"%> </th>
+    <th><%= link_to "Price", :sort => "price"%> </th>
+    <th><%= link_to "", :sort => ""%> </th>
+  </tr>
+<% @flights.each do |flight| %>
+  <tr>
+    <td><%=flight.airline %></td>
+    <td><%=flight.departure %></td>
+    <td><%=flight.arrival %></td>
+    <td><%=flight.duration %></td>
+    <td><%=flight.price %></td>
+    <td><%= link_to "book", new_booking_path, class: "btn btn-outline-info btn-sm" %></td>
+    <td><%= link_to 'Show', flights_path, class: "btn btn-outline-info btn-sm" %></td>
+    <td><%= link_to 'Edit', edit_flight_path(flight),class: "btn btn-outline-warning btn-sm" %></td>
+    <td><%= link_to 'Destroy', flights_path,class: "btn btn-outline-danger btn-sm" %>
+
+  </tr>
+  <% end %>
+  </table>
+
+
+<%= link_to "New flight", new_flight_path %>
+ 
+<br>
+

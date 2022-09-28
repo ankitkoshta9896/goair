@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Go Air✈</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="iCjjMW94Rc-3ZuV82W8XmvKArx3tIxbRcmj1feivNx2n0yYrXl4apNaYYJCewUiuDR_dDkfEZ-4-yVyTEi0k-w" />
+    
+
+    <link rel="stylesheet" href="/assets/application-956af007f826f3ff3281c6ea90c4319a314f7dc4526a0d83d3f8655eb1e0c74e.css" data-turbo-track="reload" />
+    <script type="importmap" data-turbo-track="reload">{
+  "imports": {
+    "application": "/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js",
+    "@hotwired/turbo-rails": "/assets/turbo.min-96cbf52c71021ba210235aaeec4720012d2c1df7d2dab3770cfa49eea3bb09da.js",
+    "@hotwired/stimulus": "/assets/stimulus.min-900648768bd96f3faeba359cf33c1bd01ca424ca4d2d05f36a5d8345112ae93c.js",
+    "@hotwired/stimulus-loading": "/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js",
+    "controllers/application": "/assets/controllers/application-368d98631bccbf2349e0d4f8269afb3fe9625118341966de054759d96ea86c7e.js",
+    "controllers/hello_controller": "/assets/controllers/hello_controller-549135e8e7c683a538c3d6d517339ba470fcfb79d62f738a0a089ba41851a554.js",
+    "controllers": "/assets/controllers/index-2db729dddcc5b979110e98de4b6720f83f91a123172e87281d5a58410fc43806.js"
+  }
+}</script>
+<link rel="modulepreload" href="/assets/application-37f365cbecf1fa2810a8303f4b6571676fa1f9c56c248528bc14ddb857531b95.js">
+<link rel="modulepreload" href="/assets/turbo.min-96cbf52c71021ba210235aaeec4720012d2c1df7d2dab3770cfa49eea3bb09da.js">
+<link rel="modulepreload" href="/assets/stimulus.min-900648768bd96f3faeba359cf33c1bd01ca424ca4d2d05f36a5d8345112ae93c.js">
+<link rel="modulepreload" href="/assets/stimulus-loading-1fc59770fb1654500044afd3f5f6d7d00800e5be36746d55b94a2963a7a228aa.js">
+<script src="/assets/es-module-shims.min-8b21b40925fc92896e87358f40a2a8aaea6bf306b34ee4a215ec09c59c6cb3ba.js" async="async" data-turbo-track="reload"></script>
+<script type="module">import "application"</script>
+  </head>
+
+  <body>
+    <main>
+      <div class="index-container">
+    <div class="flight-container">
+        <p class="title">Go Air ✈</p>
+        <form action="/flights/search" accept-charset="UTF-8" method="get">
+            <div class="double-drop-field">
+                <label for="departure_airport_id">Departure airport</label>
+                <label for="arrive_airport_id">Arrive airport</label>
+                <select name="departure_airport_id" id="departure_airport_id"><option value="1">BOM</option>
+<option value="2">HYD</option></select>
+                <select name="arrive_airport_id" id="arrive_airport_id"><option value="1">HYD</option>
+<option value="2">BOM</option>></select>
+            </div>
+            <div class="drop-field">
+                <label for="passengers">Passengers</label>
+                <select name="passengers" id="passengers"><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option></select>
+            </div>
+            <div class="drop-field">
+                <label for="flight_date">Flight date</label>
+                <select name="flight_date" id="flight_date"><option value="25/09/2022">25/09/2022</option>
+<option value="26/09/2022">26/09/2022</option>
+<option value="27/09/2022">27/09/2022</option>
+<option value="28/09/2022">28/09/2022</option>
+<option value="29/09/2022">29/09/2022</option></select>
+            </div>
+            <div class="actions">
+                
+                <li class="nav-item">
+         <%= link_to "Search", flights_path, class:"nav-link", class:'btn btn-secondary' %>
+        </li>
+            </div>
+</form>    </div>
+        
+        </div>
+</div>
+
+</form>                </div>
+                
+        </div>
+
+    </main>
+  </body>
+</html>
+
